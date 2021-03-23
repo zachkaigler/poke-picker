@@ -25,13 +25,12 @@ inputForm.addEventListener("submit", function (event) {
                             let captureTag = document.createElement("div")
                             let button = document.createElement("button")
                             let blankDiv = document.createElement("div")
-                            let lineBreak = document.createElement("div")
+                            let lineBreak = document.createElement("br")
                             let listItemDiv = document.createElement("div")
 
                             listItemDiv.classList = "pokemon-list-item"
 
                             blankDiv.innerText = ""
-                            lineBreak.innerHTML = "<br>"
 
                             captureTag.innerText = `You captured ${object.name}!`
 
@@ -42,6 +41,7 @@ inputForm.addEventListener("submit", function (event) {
                             button.classList = "send-to-pc"
                             button.innerText = "Send to PC"
 
+                            listItemDiv.append(lineBreak)
                             listItemDiv.append(captureTag)
                             listItemDiv.append(img)
                             listItemDiv.append(blankDiv)
