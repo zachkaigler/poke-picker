@@ -50,7 +50,7 @@ inputForm.addEventListener("submit", function (event) {
 
                             li.append(listItemDiv)
 
-                            pokemonList.append(li)
+                            pokemonList.insertBefore(li, pokemonList.firstChild)
 
                             button.addEventListener("click", function (event) {
                                 li.remove()
